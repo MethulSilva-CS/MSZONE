@@ -1,0 +1,167 @@
+.tvseries-hero {
+    position: relative;
+}
+
+.tvseries-banner-img {
+    width: 100%;
+    height: 150vh;
+    object-fit: cover;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.tvseries-hero-caption {
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+}
+
+.tvseries-search-bar .tv-icons{
+    width: 28px;
+    cursor: pointer;
+    margin-left: 10px;
+   margin-bottom: -10px;
+}
+
+.tvseries-caption-img {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: -10px;
+    margin-left: -40px;
+}
+
+.tvseries-hero-caption p {
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.tvseries-hero-btns {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tvseries-hero-btns .tvseries-btn img {
+    width: 25px;
+}
+
+.tvseries-hero-btns .tvseries-btn {
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tvseries-hero-btns .tvseries-btn.dark-btn {
+    color: white;
+    background: #6d6d6eb3;
+}
+
+.tvseries-hero-btns .tvseries-btn:hover {
+    background: #ffffffbf;
+}
+
+.tvseries-hero-btns .tvseries-btn.dark-btn:hover {
+    background: #6d6d6e66;
+}
+
+.tvseries-more-cards {
+    padding-left: 6%;
+}
+
+
+.tvseries-search-bar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 36%;
+}
+
+.tvseries-search-bar input {
+    padding: 10px 15px;
+    width: 300px;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    font-size: 16px;
+   background-color: transparent; 
+    color: #ffffff;
+}
+
+.tvseries-search-bar input::placeholder {
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .tvseries-hero-caption .title-cards {
+        display: none;
+    }
+    .tvseries-hero-btns {
+        margin-bottom: 30px;
+    }
+    .tvseries-search-bar input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    .tvseries-hero-caption {
+        padding-left: 4%;
+    }
+
+    .tvseries-caption-img {
+        margin-bottom: 10px;
+        width: 40%;
+    }
+
+    .tvseries-hero-caption p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .tvseries-hero-btns .tvseries-btn img {
+        width: 20px;
+    }
+
+    .tvseries-more-cards {
+        padding-left: 4%;
+    }
+
+    .tvseries-search-bar {
+        padding-left: 4%;
+    }
+
+    .tvseries-search-bar input {
+        width: 200px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .tvseries-caption-img {
+        display: none;
+    }
+
+    .tvseries-hero-btns .tvseries-btn img {
+        width: 15px;
+    }
+
+    .tvseries-hero-btns .tvseries-btn {
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .tvseries-search-bar input {
+        width: 180px;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
